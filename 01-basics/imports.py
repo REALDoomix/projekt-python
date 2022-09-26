@@ -59,6 +59,7 @@ pip install -r requirements.txt
 # V konzoli virtuálního prostředí proveďte instalaci externího balíčku camelcase
 # (venv) E:\python\projekt\venv>pip install camelcase
 # Poté tento balíček importujte
+
 import camelcase
 c = camelcase.CamelCase() # Konstruktor třídy CamelCase() vytvoří objekt v proměnné c
 txt = 'ahoj světáku'
@@ -75,3 +76,7 @@ Použijte vhodné moduly v Pythonu (včetně jejich případné instalace) k tom
 K řešení prvního úkolu je možné doporučit importovat interní modul datetime
 Řešení dalších dvou úkolů můžete odvodit z příkladů v dokumentaci k externímu modulu dateutil - viz https://pypi.org/project/python-dateutil/
 """
+from datetime import datetime
+now = datetime.now()
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+print("Datum a čas = ", dt_string)

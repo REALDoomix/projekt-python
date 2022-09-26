@@ -9,14 +9,6 @@ K odsazení musí být použita minimálně jedna mezera.
 Obvykle se k odsazování používá tubulátor, který bývá nejčastěji nastaven na 4 mezery.
 '''
 
-# Odsazení bloku kódu uvnitř cyklu a podmínky
-for i in range(1, 10):
-    print(i)
-    if i % 2 == 0:
-        print('even')
-    else:
-        print('odd')
-
 
 '''
 Dokumentační řetězce v Pythonu (docstrings)
@@ -49,4 +41,21 @@ Vytvořte libovolně pojmenovanou vlastní funkci s minimálně jedním parametr
 aspoň jednu podmínku if a funkci print(). Dodržte správné odsazování kódu a opatřete funkci stručnou dokumentací.
 Do konzole vypište nejprve docstring vaší funkce a potom zavolejte funkci samotnou.   
 """
+def funkce(parametr):
+    """
+    jednoduchá ukázková funkce
+    :param parametr: číselný údaj, který budeme testovat v cyklu
+    :return: bez návratové hodnoty
+    """
 
+    for i in range(1, 10):
+        if i > parametr:
+            print(f'í = {i} parametr = {parametr } : hodne')
+        elif i == parametr:
+            print(f'í = {i} parametr = {parametr } : stejne')
+        else:
+            print(f'í = {i} parametr = {parametr } : malo')
+
+funkce(4)
+
+print(funkce.__doc__)

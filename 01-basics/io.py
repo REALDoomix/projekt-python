@@ -98,3 +98,4 @@ využijete na maximum možností výstupů do konzole. Může to být vtipný do
 z matematiky...), průvodce fiktivní instalací atd. Fantazii se meze nekladou a vtipnější vyhrává :-)
 Aplikaci uložte do samostatného souboru myapp.py.     
 """
+
