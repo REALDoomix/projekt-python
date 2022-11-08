@@ -56,11 +56,11 @@ print(f'\tVypíše každý druhý prvek ze seznamu letters: {letters[::2]}')
 # ??? 1. cvičení ???
 # Doplňte podle zadání chybějící u následujících tří výpisů
 print('\n1. Cvičení\n***********************************************************************************************')
-print(f'\tVypíše poslední 2 prvky ze seznamu numbers: ???')
-print(f'\tVypíše každý sudý prvek ze seznamu letters: ???')
-print(f'\tVypíše všechny hodnoty z mixed_list kromě dvou posledních: ???')
-print(f'\tVypíše hodnotu prvku name ze slovníku umístěného v seznamu mixed_list: ???')
-print(f'\tVypíše hodnotu předposledního čísla z listu numbers umístěného v seznamu mixed_list: ???')
+print(f'\tVypíše poslední 2 prvky ze seznamu numbers: {numbers[-2:]}')
+print(f'\tVypíše každý sudý prvek ze seznamu letters: {letters[1::2]}')
+print(f'\tVypíše všechny hodnoty z mixed_list kromě dvou posledních: {mixed_list[:-2]}')
+print(f'\tVypíše hodnotu prvku name ze slovníku umístěného v seznamu mixed_list: {mixed_list[4]["name"]}')
+print(f'\tVypíše hodnotu předposledního čísla z listu numbers umístěného v seznamu mixed_list: {mixed_list[3][-2]}')
 print('***********************************************************************************************\n')
 # ??? Konec 1. cvičení ???
 
@@ -285,6 +285,18 @@ print(f'\tSbalení seznamů do proměnné values: {values}\n')
 from random import randint
 
 print(f'\n*************************************\nCvičení 2\n*************************************')
+hundreds = [i for i in range(1, 2001) if i % 200 == 0]
+import string
+import random
+letters = string.ascii_uppercase
+ascii = [random.choice(letters) for i in range(50)]
+print (ascii, len(ascii))
+hundreds = hundreds[3:-3]
+print(hundreds)
+#unique = ''.join(sorted(set(ascii), key=ascii.index))
+#print(list(unique))
+unique = [chr for chr in ascii if ascii.count(chr) == 1]
+print(unique)
 
 
 
@@ -298,3 +310,18 @@ print(f'\n*************************************\nCvičení 2\n******************
 # Záznamy budou seřazeny podle věku (sestupně).
 
 print(f'\n*************************************\nCvičení 3\n*************************************')
+
+persons.append(('Tomáš', 17, 'muž'))
+persons.extend([('Sofja', 17, 'žena'), ('Michaela', 17, 'žena')])
+persons.insert(1, ('Samuel', 17, 'muž'))
+print(persons)
+
+def vypis(lst):
+    result = ''
+    for item in lst:
+        result += f'{item[0]}\n{"-" * len(item[0])}\n'
+    return result
+
+women = list(filter(lambda x: x[2] == 'žena', persons))
+womenNotLambda = [item for item in persons if item[2] == 'žena']
+print(vypis(womenNotLambda))

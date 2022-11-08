@@ -1,0 +1,20 @@
+def char_frequency(txt):
+    return sorted([(char, txt.count(char)) for char in set (txt)],
+                  reverse=True, key=lambda i: i[1])
+
+def read_txtfile(filename):
+    f = open(filename, "r", encoding = 'utf8')
+    return f.read()
+
+def write_txtfile(filename, text):
+    f = open(filename, "w", encoding='utf8')
+    f.write(text)
+    f.close()
+    return True
+
+pokus = 'aksjdkas jkhajs'
+print(read_txtfile('list.py'))
+print(char_frequency(read_txtfile('list.py')))
+write_txtfile('frekvence.txt',str(char_frequency(read_txtfile('list.py'))))
+
+
