@@ -1,0 +1,15 @@
+[
+  {"nickname": "Houska", "sex":  "man", "state":  "CZE"},
+  {"nickname": "Jenny", "sex":  "woman", "state":  "CAN"},
+  {"nickname": "Igor", "sex":  "man", "state":  "RUS"},
+  {"nickname": "Michelle", "sex":  "woman", "state":  "FRA"},
+  {"nickname": "Justine", "sex":  "woman", "state":  "USA"},
+  {"nickname": "Jacek", "sex":  "man", "state":  "POL"},
+  {"nickname": "Greta", "sex":  "woman", "state":  "SWE"},
+  {"nickname": "Peter", "sex":  "man", "state":  "SVK"},
+  {"nickname": "Alex", "sex":  "woman", "state":  "AUS"},
+  {"nickname": "Rutte", "sex":  "woman", "state":  "GER"},
+  {"nickname": "Carlos", "sex":  "man", "state":  "SPA"},
+  {"nickname": "Noriaki", "sex":  "man", "state":  "JAP"},
+  {"nickname": "Paavo", "sex":  "man", "state":  "FIN"}
+]
