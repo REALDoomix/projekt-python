@@ -1,7 +1,7 @@
 '''
  Set je množina jedinečných hodnot
- A set is a collection which is unordered and unindexed.
- In Python sets are written with curly brackets.
+ Set je kolekce, která není zindexovaná ani seřazená.
+ V pythonu sety jsou psány ve vlnitých závorkách.
 '''
 my_set = {2, 3, 9, 7}
 print('Množina my_set: ', my_set)
@@ -18,28 +18,29 @@ chars = sorted(list('Hello world'))
 set_chars = set(chars)
 print(f'Uspořádaná množina (set) jedinečných hodnot: {set_chars}')
 
-# Once a set is created, you cannot change its items, but you can add new items. 
-# To add one item to a set use the add() method.
+# Jakmile je vytvořen set není možné položky měnit, ale můžete nějaké přidat.
+# Abyste přidali jednu položku do setu použíjte add() metodu.
 set_chars.add('V')
 
-# To add more than one item to a set use the update() method.
+# Abyste přidali více než jednu položku do setu použíjte update() metodu.
 set_chars.update('X', 'Y', 'Z')
 
-# To remove an item in a set, use the remove(), or the discard() method.
+# Abyste odstranili položku v setu, použíjte metodu remove(), nebo discard()
 set_chars.remove('H')
 print(f'Proměnná set_chars: {set_chars}')
 
-# The clear() method empties the set 
+# Použitím metody clear() se set vyprázdní.
 set_chars.clear()
 
-# The del keyword will delete the set completely:
+# Klíčové slovo del kompletně smaže celý set:
 del set_chars
 
 # Přístup k hodnotám množiny
-# You cannot access items in a set by referring to an index, since sets are unordered the items has no index.
+# V setu se nedokážete dostat k předmětu pomocí indexu, jelikož set je neseřazený (tudíž nemá žádný index)
 # my_set[1]
 
-# But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword.
+
+# Ale můžete loopovat skrz set pomocí for loopu, nebo si ověřit, zda se určitá hodnota vyskytuje v setu, pomocí použití klíčového slova "in".
 for x in my_set:
   print(x)
 

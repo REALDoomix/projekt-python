@@ -19,17 +19,17 @@ print('colors: ', colors)
 # Součet tuples
 print(f'chars + numbers: {chars + numbers}')
 
-# Výpis hodnot 
-# You can specify a range of indexes by specifying where to start and where to end the range.
-# When specifying a range, the return value will be a new tuple with the specified items.
+# Výpis hodnot
+# Můžete specifikofvat range indexů, když specifikujete kde má začít a skončit range.
+# Při specifikování range, returnová hodnota budde nový tuple se specifikovanými itemy.
 print(f'chars[2:5]: {chars[2:5]}')
 
-# Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item etc.
-# Specify negative indexes if you want to start the search from the end of the tuple: 
-# This example returns the items from index -4 (included) to index -1 (excluded)
+# Negativní indexy (t.j. např. -1) znamená, že se bude začínat od konce (-1 ukazuje na poslední položku, -2 ukazuje na předposlední položku atd.)
+# Použíjte negativní indexy, pokud chcete začit vyhledávat od konce tuplu:
+# Tento příklad returnuje předměty od indexu -4 (včetně) až po index -1 (kromě -1)
 print(f'chars[-4:-1]: {chars[-4:-1]}')
 
-# To determine how many items a tuple has, use the len() method:
+# Abyste zjistili kolik předmětů má tuple, použíjte len() metodu:
 print(f'len(chars): {len(chars)}')
 
 # Zjištění prvního výskytu a počtu výskytu prvku

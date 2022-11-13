@@ -12,9 +12,9 @@ def write_txtfile(filename, text):
     f.close()
     return True
 
-pokus = 'aksjdkas jkhajs'
-print(read_txtfile('list.py'))
-print(char_frequency(read_txtfile('list.py')))
-write_txtfile('frekvence.txt',str(char_frequency(read_txtfile('list.py'))))
+pokus = 'Tři sta třicet tři stříbrných stříkaček přestříkalo přes tři sta třicet tři stříbrných střech.'
+print(pokus)
+print(char_frequency(pokus))
+write_txtfile('frekvence.txt',str(char_frequency(pokus)))
 
 
